@@ -48,6 +48,8 @@ pub struct Handshake<const KEY_LENGTH: usize, const SALT_LENGTH: usize> {
 /// provided by the client to the server
 #[derive(Debug)]
 #[allow(non_snake_case)]
+#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize)]
 pub struct HandshakeProofVerifier {
     /// the servers pub and private key
     pub server_keys: KeyPair,
